@@ -1,0 +1,161 @@
+//Fuentes
+@font-face {
+  font-family:ReneBieder;
+  src: url("../fonts/Rene_Bieder_Milliard_Medium.otf");
+}
+
+//Colores
+$primary:#fefffe;
+$success:#cbb29b;
+$info: #54667a;
+$secondary : #5e5d5e;
+$danger : #740624;
+$warning : #D1E7FF;
+
+:root {
+  --color-primary : #fefffe;
+  --color-success : #cbb29b;
+  --info  : #54667a;
+  --secondary : #5e5d5e;
+  --danger : #740624;
+
+  --negro : #000;
+  --blanco  : #fff;
+
+  --fondo-dark : #FFF3F5;
+  --fondo-light : #FFEAEE;
+
+  --azul-dark : #012B39;
+  --azul-light : #D1E7FF;
+  --gray-light : #7E9BBB;
+}
+
+//Breakpoints (responsive) 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 560px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1440px,
+);
+
+//Etiquetas
+h1, h2, span {
+  margin-bottom: 0 !important;
+}
+
+p {
+  font-family: ReneBieder;
+  font-size: 17px;
+  overflow-wrap: break-word;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+#content{
+transition: opacity .3s ease;
+}
+
+.fade-out{
+opacity:0;
+}
+
+// Animacion y estilos Toastify
+.toastify {
+  opacity: 1 !important;
+  padding: 15px 20px !important;
+  border-radius: 15px !important;
+  transition: 1.4s !important;
+  animation-name: animationtoastify !important;
+  animation-duration: 2s !important;
+  animation-delay: 0s !important;
+
+  .toast-close {
+    color: white !important;
+    background: white !important;
+    opacity: 1 !important;
+    border-radius: 8px !important;
+    padding: 8px !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+  }
+}
+
+@keyframes animationtoastify {
+  0%{
+    opacity: 0 !important;
+    transform: translateY(-110px) !important;
+  }
+
+  100%{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+  }
+}
+
+//Backgrounds Pages
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translate(0px, 0px);
+  width: 100%;
+  height: 100%;
+  opacity: 60%;
+  z-index: -1;
+}
+
+body {
+  position: relative;
+  padding-bottom: 340px;
+  min-height: 100vh;
+  //display: flex;
+  //flex-direction: column;
+  //min-height: 100vh;
+}
+
+//Acomoda el espacio del Footer
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 260px;
+  }
+}
+
+@media (min-width: 1024px) {
+  body {
+    padding-bottom: 190px;
+  }
+}
+
+@media (min-width: 1440px) {
+  body {
+    padding-bottom: 170px;
+  }
+}
+
+//Estilos de scroll-bar (Solo de la barra principal)
+body::-webkit-scrollbar {
+  width: 16px;
+}
+body::-webkit-scrollbar-track {
+  background: var(--fondo-light);
+}
+body::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  background-color: var(--danger);
+  box-shadow: 0 -100vh 0 98vh var(--azul-light);
+}
+
+//Estilos de scroll-bar (Todos los componentes)
+::-webkit-scrollbar {
+  width: 16px;
+}
+::-webkit-scrollbar-track {
+  background: var(--gray-light);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--danger);
+}

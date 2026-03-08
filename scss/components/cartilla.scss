@@ -1,0 +1,69 @@
+// .content-cartilla {
+//   margin: 0;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   background: #fff;
+
+//   .image-cartilla {
+//   max-width: 100%;
+//   height: auto;
+//   }
+// }
+
+body{
+background:black;
+margin:0;
+}
+
+/* contenedor con scroll */
+
+.zoom-container{
+overflow:auto;
+height:100vh;
+text-align:center;
+}
+
+/* imagen */
+
+.menu-img{
+width:100%;
+height:auto;
+}
+
+/* controles */
+
+.menu-controls{
+position:fixed;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+display:flex;
+gap:10px;
+z-index:10;
+}
+
+/* botones */
+
+.menu-controls button{
+width:45px;
+height:45px;
+border-radius:50%;
+border:none;
+font-size:18px;
+}
+
+/* paginación */
+
+.page-indicator{
+position:fixed;
+top:20px;
+left:50%;
+transform:translateX(-50%);
+background:rgba(0,0,0,.6);
+color:white;
+padding:6px 14px;
+border-radius:20px;
+font-size:16px;
+z-index:10;
+}

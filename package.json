@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "sass-compile": "sass --watch scss/styles.scss css/styles.css"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8"
+  }
+}

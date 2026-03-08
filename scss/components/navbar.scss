@@ -1,0 +1,160 @@
+// .navbar {
+//   border-bottom: 2px solid var(--color-success);
+//   position: sticky !important;
+//   top: 0;
+//   z-index: 12;
+
+//   .container {
+//     width: auto;
+    
+//     .navbar-content {
+//       flex-wrap: wrap;
+//       display: flex;
+//       justify-content: center;
+
+//       .site-logo {
+//         align-content: space-evenly;
+
+//         a {
+//           display: flex;
+
+//           .texto {
+//             margin-left: 10px;
+//           }
+//         }
+//       }
+
+//       .site-items {
+//         align-content: center;
+
+//         .links-navbar {
+//           margin-bottom: 0;
+//           display: flex;
+
+//           a {
+//             padding-top: 21px;
+//             padding-left: 12px;
+//             padding-bottom: 21px;
+//             padding-right: 12px;
+//           }
+//           ol {
+//             padding: 0;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+// @media (min-width: 768px) {
+//   .navbar {
+//     max-height: 70px;
+//     flex-wrap: nowrap !important;
+
+//     .container {
+//       .navbar-content {
+//         flex-wrap: nowrap;
+
+//         .title-nav{
+//           padding-left: 50px;
+//           align-content: space-evenly;
+//         }
+//       }
+//     }
+//   }
+// }
+
+
+.navbar {
+  border-bottom: 2px solid var(--color-success);
+  position: sticky !important;
+  top: 0;
+  z-index: 12;
+
+  .container {
+    width: auto;
+    
+    .navbar-content {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: center;
+
+      .site-logo {
+        align-content: space-evenly;
+
+        a {
+          display: flex;
+
+          .texto {
+            margin-left: 10px;
+          }
+        }
+      }
+
+      .social-medias {
+        align-content: center;
+
+        .icons {
+          margin-bottom: 0;
+          display: flex;
+
+          .mdi-twitter {
+            color: #009efb !important;
+          }
+
+          .mdi-facebook {
+            color: darkblue;
+          }
+
+          .mdi-instagram {
+            color: palevioletred;
+          }
+
+          .fa-youtube {
+            color: #f62d51;
+          }
+
+          .fa-envelope {
+            color: darkgray;
+          }
+
+
+
+          a {
+            padding-top: 21px;
+            padding-left: 12px;
+            padding-bottom: 21px;
+            padding-right: 12px;
+          }
+          ol {
+            padding: 0;
+          }
+        }
+      }
+
+      .title-nav {
+        text-align: center;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 768px) {
+  .navbar {
+    max-height: 70px;
+    flex-wrap: nowrap !important;
+
+    .container {
+      .navbar-content {
+        flex-wrap: nowrap;
+
+        .title-nav{
+          padding-left: 50px;
+          align-content: space-evenly;
+        }
+      }
+    }
+  }
+}
